@@ -4,8 +4,8 @@ class Application
     resp = Rack::Response.new
  
     time = Time.now
-    if num_1==num_2 && num_2==num_3
-      resp.write "You Win"
+    if Time.now < 12
+      resp.write "Good morning"
     else
       resp.write "You Lose"
     end
